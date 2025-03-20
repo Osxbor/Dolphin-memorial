@@ -1,0 +1,85 @@
+/* Import Bulma */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* Custom Bulma overrides using CSS variables */
+.button.is-primary {
+  background-color: var(--primary-color);
+}
+.button.is-primary:hover {
+  background-color: var(--primary-light);
+}
+
+.button.is-info {
+  background-color: var(--accent-color);
+}
+.button.is-info:hover {
+  background-color: var(--accent-light);
+}
+
+.button.is-success {
+  background-color: var(--secondary-color);
+}
+.button.is-success:hover {
+  background-color: var(--secondary-light);
+}
+
+/* Typography */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--primary-color);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+/* Custom classes */
+.memorial-section {
+  padding: var(--spacing-xxl) 0;
+}
+
+.memorial-card {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.memorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.dolphin-highlight {
+  color: var(--dolphin-blue);
+}
+
+.river-highlight {
+  color: var(--river-teal);
+}
+
+.memorial-bg {
+  background-color: var(--memorial-gray);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .memorial-section {
+    padding: var(--spacing-xl) 0;
+  }
+}
+
